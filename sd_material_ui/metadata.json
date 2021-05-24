@@ -5698,6 +5698,246 @@
       }
     }
   },
+  "src/lib/components/Slider.react.js": {
+    "description": "Material UI Slider component",
+    "displayName": "Slider",
+    "methods": [
+      {
+        "name": "handleChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "classes": {
+        "required": false,
+        "flowType": {
+          "name": "signature",
+          "type": "object",
+          "raw": "{\n    root?: string,\n    horizontal?: string,\n    vertical?: string,\n    alternativeLabel?: string,\n}",
+          "signature": {
+            "properties": [
+              {
+                "key": "root",
+                "value": {
+                  "name": "string",
+                  "required": false
+                }
+              },
+              {
+                "key": "horizontal",
+                "value": {
+                  "name": "string",
+                  "required": false
+                }
+              },
+              {
+                "key": "vertical",
+                "value": {
+                  "name": "string",
+                  "required": false
+                }
+              },
+              {
+                "key": "alternativeLabel",
+                "value": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            ]
+          }
+        },
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "className": {
+        "required": false,
+        "flowType": {
+          "name": "string"
+        },
+        "description": "CSS class name of the root element",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "color": {
+        "required": false,
+        "flowType": {
+          "name": "string"
+        },
+        "description": "'primary' | 'secondary'",
+        "defaultValue": {
+          "value": "'primary'",
+          "computed": false
+        }
+      },
+      "dashCallbackDelay": {
+        "required": false,
+        "flowType": {
+          "name": "number"
+        },
+        "description": "Dash callback delay in ms - default is 500 ms",
+        "defaultValue": {
+          "value": "500",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "required": false,
+        "flowType": {
+          "name": "boolean"
+        },
+        "description": "If true, the input element will be disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "fireEvent": {
+        "required": false,
+        "flowType": {
+          "name": "signature",
+          "type": "function",
+          "raw": "() => void",
+          "signature": {
+            "arguments": [],
+            "return": {
+              "name": "void"
+            }
+          }
+        },
+        "description": "Dash event handler for click events",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      },
+      "id": {
+        "required": true,
+        "flowType": {
+          "name": "string"
+        },
+        "description": "Dash ID"
+      },
+      "max": {
+        "required": false,
+        "flowType": {
+          "name": "number"
+        },
+        "description": "The maximum allowed value of the slider. Should not be equal to min",
+        "defaultValue": {
+          "value": "100",
+          "computed": false
+        }
+      },
+      "min": {
+        "required": false,
+        "flowType": {
+          "name": "number"
+        },
+        "description": "The minimum allowed value of the slider. Should not be equal to max",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "orientation": {
+        "required": false,
+        "flowType": {
+          "name": "union",
+          "raw": "'horizontal' | 'vertical'",
+          "elements": [
+            {
+              "name": "literal",
+              "value": "'horizontal'"
+            },
+            {
+              "name": "literal",
+              "value": "'vertical'"
+            }
+          ]
+        },
+        "description": "The Slider orientation (layout flow direction)",
+        "defaultValue": {
+          "value": "'horizontal'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "required": false,
+        "flowType": {
+          "name": "signature",
+          "type": "function",
+          "raw": "(props: {stepIndex?: number}) => void",
+          "signature": {
+            "arguments": [
+              {
+                "name": "props",
+                "type": {
+                  "name": "signature",
+                  "type": "object",
+                  "raw": "{stepIndex?: number}",
+                  "signature": {
+                    "properties": [
+                      {
+                        "key": "stepIndex",
+                        "value": {
+                          "name": "number",
+                          "required": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "return": {
+              "name": "void"
+            }
+          }
+        },
+        "description": "Dash callback to update props on the server",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      },
+      "value": {
+        "required": false,
+        "flowType": {
+          "name": "number"
+        },
+        "description": "The value of the slider",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "style": {
+        "required": false,
+        "flowType": {
+          "name": "Object"
+        },
+        "description": "Override the inline-style of the root element",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Snackbar.react.js": {
     "description": "Material UI Snackbar component",
     "displayName": "Snackbar",
